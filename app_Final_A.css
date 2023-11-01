@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgba(240, 248, 255, 0);    */
+}
+#contenedor{
+    background-image: url(./media/phone_14_01\ [Convertido]-01.png);
+    background-size:contain;   
+    background-repeat: no-repeat;
+    /* background-position: ; */
+    /* width: 386px;
+    height: 650px; */
+    width: 386px;
+    height: 650px;
+    border: solid 1px black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.card {
+position: absolute;
+inset: 0;
+margin: auto;
+transform: translateY(-10%);
+width: 65%;
+}
+.card-body{
+    background-color: rgb(185, 204, 253);
+}
+
+#alert {
+    color: darkred;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.72rem;
+  }
+  #alert1 {
+    color: rgb(2, 59, 103);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.72rem;
+  }

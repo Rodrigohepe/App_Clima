@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app_Final_A.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>app Temperaturas</title>
+</head>
+
+<body>
+    <div class="container" id="contenedor">
+
+        <div id="cardLogin" class="card">
+            <div id="headLogin"class="card-header"><h5>Login</h5></div>
+            <div class="card-body">
+                <form id="formLogin">
+                    <input id="User" placerholder="Usuario" type="text" class="m-1">
+                    <input id="Password" placerholder="Contraseña" type="password">
+                    <button type="submit" class="btn btn-primary m-2">Entrar</button>
+                </form>
+                <div class="row"><div class="col text-center mt-1"><p id="alert"></div></div>
+            </div>
+        </div>
+        <div id="cardMes" class="card d-none">
+            <div id="headMes"class="card-header"><h5>Mes a cargar</h5></div>
+            <div class="card-body">
+                <select id="selectMes"class="form-select" aria-label="Default select example">
+                    <option id="200"selected value="7">Seleccione un mes </option>
+                    <option id="1" value="31">Enero</option>
+                    <option id="2" value="28">Febrero</option>
+                    <option id="3" value="31">Marzo</option>
+                    <option id="4" value="30">Abril</option>
+                    <option id="5" value="31">Mayo</option>
+                    <option id="6" value="30">Junio</option>
+                    <option id="7" value="31">Julio</option>
+                    <option id="8" value="31">Agosto</option>
+                    <option id="9" value="30">Septiembre</option>
+                    <option id="10" value="31">Octubre</option>
+                    <option id="11" value="30">Noviembre</option>
+                    <option id="12" value="31">Diciembre</option>
+                </select>
+                <button id="selectButton" type="submit" class="btn btn-primary m-2">Seleccionar </button>
+            </div>
+        </div>
+        <div id="cardLectura" class="card d-none">
+            <div id="headLectura"class="card-header"><h5 id="Hmes">Ingreso de datos mes: </h5></div>
+            <div class="card-body">
+                <form id="formLectura" action="">
+                    <input id="EntryTemp" placeholder=" " type="number" class=" input m-2">
+                    <input id="EntryHume" placeholder=" " type="number" class=" input m-2">
+                    <button type="submit" class="btn btn-primary m-2"> Cargar </button>
+                    <div class="row"><div id="alertT" class="col text-center mt-1"><p id="alert1"></p></div></div>
+                    <div class="row"><div id="alertH" class="col text-center mt-1"><p id="alert2"></p></div></div>
+                </form>
+            </div>
+        </div>
+        <div id="cardResultados" class="card d-none">
+            <div class="card-header"><h5>Resumen </h5><h6 id="headResultados"></h6></div>
+            <div class="card-body">
+                <div class="col">
+                    <div class="row"><h6 id="Res_A">Mes: </h6> </div>
+                    <div class="row"><h6 id="Res_B">Promedio Temp. mensual: </h6> </div>
+                    <div class="row"><h6 id="Res_C">Dias calurosos: </h6></div>
+                    <div class="row"><h6 id="Res_D">Día mas caluroso: </h6></div>
+                    <div class="row"><h6 id="Res_E">Promedio fines de semana: </h6> </div>
+                </div>
+            </div>
+        </div>
+        <div id="cardGrafico" class="card d-none">
+            <div id="headGrafico"class="card-header"><h5>Grafico </h5><h6></h6></div>
+            <div class="card-body">
+                <!-- aca va grafico de canvas -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./app_Final_A.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html> 
